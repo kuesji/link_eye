@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/background_primary"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="16dp"
+	android:weightSum="10">
+
+	<EditText
+		android:id="@+id/main_history_search"
+		android:background="@color/background_secondary"
+		android:textColor="@color/foreground_primary"
+		android:textColorHint="@color/foreground_primary"
+		android:textSize="16dp"
+		android:hint="@string/main_history_search_hint"
+		android:lines="1"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="start|center_vertical"
+		android:padding="8dp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.75"
+		android:orientation="horizontal"
+		android:weightSum="1"
+		android:layout_marginTop="8dp">
+
+		<TextView
+			android:text="@string/main_history_header_hint"
+			android:textColor="@color/foreground_primary"
+			android:textSize="12dp"
+			android:fontFamily="monospace"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:gravity="start|center_vertical"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:layout_weight="0.6"/>
+
+		<Button
+			android:id="@+id/main_history_delete_all"
+			android:background="@color/background_secondary"
+			android:textColor="@color/foreground_primary"
+			android:text="@string/main_history_header_delete_all"
+			android:textSize="14dp"
+			android:textAllCaps="false"
+			android:fontFamily="monospace"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.4"
+		/>
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="8.2"
+		android:layout_marginTop="8dp"
+		android:fillViewport="true"
+		android:overScrollMode="never"
+		android:fadeScrollbars="false">
+
+		<LinearLayout
+			android:id="@+id/main_history_content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"/>
+
+	</ScrollView>
+
+</LinearLayout>

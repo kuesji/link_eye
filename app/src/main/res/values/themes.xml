@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AlertDialogCustom" parent="@android:style/Theme.Material">
+		<item name="android:background">#232834</item>
+		<item name="android:textColor">#eeeeee</item>
+		<item name="android:textSize">16dp</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+</resources>

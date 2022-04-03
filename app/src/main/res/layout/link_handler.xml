@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/background_primary"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="16dp"
+	android:weightSum="1">
+
+	<EditText
+		android:id="@+id/link_handler_url"
+		android:background="@color/background_secondary"
+		android:textColor="@color/foreground_primary"
+		android:textColorHint="@color/foreground_primary"
+		android:textSize="14dp"
+		android:fontFamily="monospace"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.2"
+		android:padding="16dp"
+		android:gravity="start|top"/>
+
+	<Button
+		android:id="@+id/link_handler_action_copy"
+		android:background="@color/background_secondary"
+		android:textColor="@color/foreground_primary"
+		android:textSize="14dp"
+		android:text="@string/link_handler_copy"
+		android:fontFamily="monospace"
+		android:textAllCaps="false"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.075"
+		android:layout_marginTop="1dp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:orientation="horizontal"
+		android:layout_weight="0.1"
+		android:layout_marginTop="16dp"
+		android:layout_marginBottom="1dp"
+		android:weightSum="1">
+
+		<Button
+			android:id="@+id/link_handler_action_open"
+			android:background="@color/background_secondary"
+			android:textColor="@color/foreground_primary"
+			android:text="@string/link_handler_open_with"
+			android:textSize="16dp"
+			android:fontFamily="monospace"
+			android:textAllCaps="false"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.5"/>
+
+		<Button
+			android:id="@+id/link_handler_action_share"
+			android:background="@color/background_seconday_not_selected"
+			android:textColor="@color/foreground_primary"
+			android:text="@string/link_handler_share_with"
+			android:textSize="16dp"
+			android:fontFamily="monospace"
+			android:textAllCaps="false"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.5"
+			android:layout_marginLeft="1dp"/>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:background="@color/background_secondary"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.62"
+		android:fillViewport="true"
+		android:overScrollMode="never"
+		android:fadeScrollbars="false">
+
+		<LinearLayout
+			android:id="@+id/link_handler_content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:paddingTop="16dp"
+			android:paddingBottom="16dp"/>
+
+	</ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/background_primary"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="16dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="96dp"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:src="@drawable/ic_link_eye"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"/>
+
+
+	</LinearLayout>
+
+	<TextView
+		android:text="@string/app_name"
+		android:textSize="16dp"
+		android:fontFamily="monospace"
+		android:textColor="@color/foreground_primary"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<TextView
+		android:text="open url with your preffered app"
+		android:textColor="@color/foreground_primary"
+		android:textSize="14dp"
+		android:fontFamily="monospace"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<TextView
+		android:text="developed by kuesji koesnu"
+		android:textColor="@color/foreground_primary"
+		android:textSize="14dp"
+		android:fontFamily="monospace"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"/>
+
+	<TextView
+		android:text="go to my website for more about me\n website -> kuesji.koesnu.com"
+		android:textColor="@color/foreground_primary"
+		android:textSize="14dp"
+		android:fontFamily="monospace"
+		android:autoLink="all"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"/>
+
+	<TextView
+		android:text="follow me on \n telegram -> t.me/kuesji\n telegram -> t.me/kuesji_store\n twitter  -> twitter.com/kuesji\n github   -> github.com/kuesji"
+		android:textColor="@color/foreground_primary"
+		android:textSize="14dp"
+		android:fontFamily="monospace"
+		android:autoLink="all"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"/>
+
+	<TextView
+		android:text="feel free to contact developer via email but don't send feature requests\n email: kuesji@koesnu.com"
+		android:textColor="@color/foreground_primary"
+		android:textSize="14dp"
+		android:fontFamily="monospace"
+		android:autoLink="all"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"/>
+
+	<TextView
+		android:text="wanna donate for this app and development of future ones?\n bmc -> buymeacoffee.com/kuesji"
+		android:textColor="@color/foreground_primary"
+		android:textSize="14dp"
+		android:fontFamily="monospace"
+		android:autoLink="all"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"/>
+
+</LinearLayout>

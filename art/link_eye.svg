@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="link_eye.svg"
+   inkscape:export-filename="/data/jails/kuesji/intellij/projects/kuesji/link_eye/art/link_eye.png"
+   inkscape:export-xdpi="256"
+   inkscape:export-ydpi="256"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     height="512px"
+     inkscape:zoom="0.6034712"
+     inkscape:cx="347.98678"
+     inkscape:cy="202.99229"
+     inkscape:window-width="1366"
+     inkscape:window-height="707"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Katman 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#232834;fill-opacity:1;stroke-width:9.12413;paint-order:stroke fill markers"
+       id="rect846"
+       width="135.467"
+       height="135.46666"
+       x="0"
+       y="-135.46666"
+       transform="rotate(90)"
+       ry="3.96875"
+       rx="0" />
+    <path
+       id="rect1326"
+       style="fill:#b7c9eb;fill-opacity:1;stroke-width:0.808223;paint-order:stroke fill markers"
+       d="m 50.58786,46.778213 -3.809655,3.810228 -15.240342,15.239769 -1.904535,1.90512 1.904535,1.905119 15.240342,15.239768 3.809655,3.810229 17.14546,-17.145462 13.334648,13.335233 3.810241,3.810229 3.809654,-3.810229 L 103.9282,69.638449 105.83333,67.73333 103.9282,65.82821 84.878209,46.778213 81.067968,50.588441 67.73332,63.9231 Z m 0,7.619884 L 63.923092,67.73333 50.58786,81.068562 37.253212,67.73333 Z m 34.290349,0 L 98.212857,67.73333 84.878209,81.068562 71.542976,67.73333 Z m -34.288606,9.548258 -1.894073,1.892902 -1.894072,1.892329 1.892329,1.894646 1.892903,1.894072 1.894072,-1.892902 1.894072,-1.892329 -1.892328,-1.894646 z m 34.289764,0 -1.894073,1.892902 -1.894072,1.892329 1.892329,1.894646 1.892913,1.894072 1.894073,-1.892902 1.894646,-1.892329 -1.892902,-1.894646 z" />
+  </g>
+</svg>

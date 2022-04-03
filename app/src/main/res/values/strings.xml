@@ -1,0 +1,33 @@
+<resources>
+	<string name="app_name">link eye</string>
+	<string name="main_tab_status_str">status</string>
+	<string name="main_tab_history_str">history</string>
+	<string name="main_tab_about_str">about</string>
+	<string name="main_status_test_url">https://kuesji.koesnu.com</string>
+	<string name="main_status_error_launch_settings">error: can\'t start settings app</string>
+	<string name="main_status_error_launch_test">error: can\'t start link eye for test (weird error)</string>
+	<string name="main_status_description">link eye is alternative chooser application to view urls before open and choose which application to open this url.</string>
+	<string name="main_status_requirement">you need to set link eye as default browser app in settings to start using.</string>
+	<string name="main_status_current">current status</string>
+	<string name="main_status_enable">enable</string>
+	<string name="main_status_test">test</string>
+	<string name="main_status_enabled">enabled</string>
+	<string name="main_status_disabled">disabled</string>
+	<string name="main_history_search_hint">type here to search</string>
+	<string name="main_history_header_hint">click url to open or delete</string>
+	<string name="main_history_header_delete_all">delete all</string>
+	<string name="main_history_header_delete_all_title">history deletion</string>
+	<string name="main_history_header_delete_all_description">this deletes all of them.\nare you sure about this?</string>
+	<string name="main_history_header_delete_all_yes">yes</string>
+	<string name="main_history_header_delete_all_no">no</string>
+	<string name="main_history_url_clicked_title">history url clicked</string>
+	<string name="main_history_url_clicked_open">open</string>
+	<string name="main_history_url_clicked_delete">delete</string>
+	<string name="main_history_url_clicked_cancel">cancel</string>
+	<!-- link handler-->
+	<string name="link_handler_copy">copy</string>
+	<string name="link_handler_open_with">open with</string>
+	<string name="link_handler_share_with">share with</string>
+	<string name="link_handler_copied_to_clipboard">copied to clipboard</string>
+	<string name="link_handler_error_launch_failed">error: can\'t start target app</string>
+</resources>
