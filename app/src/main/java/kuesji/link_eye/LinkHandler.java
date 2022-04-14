@@ -78,15 +78,13 @@ public class LinkHandler extends Activity {
 		HistoryHelper historyHelper = new HistoryHelper(this);
 		historyHelper.insert(urlArea.getText().toString());
 		historyHelper.close();
-
-		/*ui = new UI(this);
-		setContentView(ui);*/
 	}
 
 	private void listHandlers(String target) {
 		PackageManager pm = getPackageManager();
 
 		Intent intent = new Intent();
+		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		if (target.equals("open")) {
 			intent.setAction(Intent.ACTION_VIEW);
 			intent.setData(Uri.parse(urlArea.getText().toString()));

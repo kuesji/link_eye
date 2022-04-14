@@ -75,14 +75,4 @@
 		android:layout_height="wrap_content"
 		android:layout_marginTop="16dp"/>
 
-	<TextView
-		android:text="wanna donate for this app and development of future ones?\n bmc -> buymeacoffee.com/kuesji"
-		android:textColor="@color/foreground_primary"
-		android:textSize="14dp"
-		android:fontFamily="monospace"
-		android:autoLink="all"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="16dp"/>
-
 </LinearLayout>

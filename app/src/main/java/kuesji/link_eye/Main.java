@@ -176,7 +176,6 @@ public class Main extends Activity {
 
 	private void setup_tab_about(){
 		tabAbout = getLayoutInflater().inflate(R.layout.main_about,null);
-
 	}
 
 	private HistoryEntry generateHistoryEntry() {
