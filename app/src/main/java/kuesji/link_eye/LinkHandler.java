@@ -9,6 +9,8 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -23,8 +25,10 @@ import java.util.Locale;
 public class LinkHandler extends Activity {
 
 	private EditText urlArea;
+	private CheckBox actionSave;
 	private Button actionCopy,actionOpen,actionShare;
 	private LinearLayout contentArea;
+	private String currentAction = "";
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -37,6 +41,14 @@ public class LinkHandler extends Activity {
 
 		setContentView(R.layout.link_handler);
 		urlArea = findViewById(R.id.link_handler_url);
+		urlArea.addTextChangedListener(new TextWatcher() {
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				listHandlers(currentAction.equals("") ? "open" : currentAction);
+			}
+			public void afterTextChanged(Editable s) {}
+		});
+		actionSave = findViewById(R.id.link_handler_save_check);
 		actionCopy = findViewById(R.id.link_handler_action_copy);
 		actionCopy.setOnClickListener((v)->{
 			ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
@@ -74,13 +86,21 @@ public class LinkHandler extends Activity {
 		}
 
 		actionOpen.performClick();
+	}
 
-		HistoryHelper historyHelper = new HistoryHelper(this);
-		historyHelper.insert(urlArea.getText().toString());
-		historyHelper.close();
+	protected void onDestroy() {
+		if( actionSave.isChecked() ){
+			HistoryHelper historyHelper = new HistoryHelper(this);
+			historyHelper.insert(urlArea.getText().toString());
+			historyHelper.close();
+		}
+
+		super.onDestroy();
 	}
 
 	private void listHandlers(String target) {
+		currentAction = target;
+
 		PackageManager pm = getPackageManager();
 
 		Intent intent = new Intent();

@@ -37,9 +37,37 @@
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
+		android:layout_weight="0.075"
+		android:layout_marginTop="8dp"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
+		android:gravity="start|center_vertical">
+
+		<CheckBox
+			android:id="@+id/link_handler_save_check"
+			android:buttonTint="@color/foreground_primary"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true">
+		</CheckBox>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:fontFamily="monospace"
+			android:textSize="14dp"
+			android:textColor="@color/foreground_primary"
+			android:text="@string/link_handler_save_history"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
 		android:orientation="horizontal"
 		android:layout_weight="0.1"
-		android:layout_marginTop="16dp"
+		android:layout_marginTop="8dp"
 		android:layout_marginBottom="1dp"
 		android:weightSum="1">
 
@@ -74,7 +102,7 @@
 		android:background="@color/background_secondary"
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
-		android:layout_weight="0.62"
+		android:layout_weight="0.55"
 		android:fillViewport="true"
 		android:overScrollMode="never"
 		android:fadeScrollbars="false">

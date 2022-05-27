@@ -26,6 +26,7 @@
 	<string name="main_history_url_clicked_cancel">cancel</string>
 	<!-- link handler-->
 	<string name="link_handler_copy">copy</string>
+	<string name="link_handler_save_history">save to history</string>
 	<string name="link_handler_open_with">open with</string>
 	<string name="link_handler_share_with">share with</string>
 	<string name="link_handler_copied_to_clipboard">copied to clipboard</string>
